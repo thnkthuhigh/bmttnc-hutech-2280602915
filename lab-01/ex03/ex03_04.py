@@ -1,10 +1,10 @@
-def truycapphantu(tupledata):
+def truy_cap_phan_tu(tupledata):
     firstelenment=tupledata[0]
     lastelenment=tupledata[-1]
     return firstelenment,lastelenment
 
-inputtuple= eval(input("nhap tuple,vi du (1,2,3):"))
-first,last=truycapphantu(inputtuple)
+inputtuple= eval(input("Nhập tuple, ví dụ (1,2,3):"))
+first,last=truy_cap_phan_tu(inputtuple)
 
-print("phan tu dau:",first)
-print("phan tu cuoi:",last)
+print("Phần tử đầu:",first)
+print("Phần tử cuối:",last)
