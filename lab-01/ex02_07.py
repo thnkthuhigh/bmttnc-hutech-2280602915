@@ -1,0 +1,1 @@
+print("Nhap cac dong va ban (Nhap 'done' de ket thuc):")
