@@ -1,5 +1,13 @@
+import sys
+import os
+
+# Add the parent directory to the sys.path to make the 'cipher' module importable
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), 'ex01')))
+
+
+
 from flask import Flask, render_template, request
-from ex01.cipher.caesar import CaesarCipher
+from cipher.caesar import CaesarCipher
 
 
 app = Flask(__name__)
@@ -12,7 +20,7 @@ def home():
 # Router for Caesar Cipher page
 @app.route("/caesar")
 def caesar():
-    return render_template("caesar.html")
+    return render_template("Caesar.html")
 
 # Route for encryption
 @app.route("/encrypt", methods=["POST"])
