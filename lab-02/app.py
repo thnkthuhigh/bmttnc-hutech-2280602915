@@ -1,9 +1,3 @@
-import sys
-import os
-
-# Add the parent directory to the sys.path to make the 'cipher' module importable
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), 'ex01')))
-
 from flask import Flask, render_template, request
 from cipher.caesar import CaesarCipher
 from cipher.playfair import PlayFairCipher
